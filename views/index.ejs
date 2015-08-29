@@ -1,0 +1,30 @@
+<% include header %>
+
+<% for (var i = 0; i < devices.length; i++) { %>
+    <h2><%= devices[i].name %></h2>
+    <table class="table table-hover table-bordered"
+           style="table-layout:fixed;">
+      <thead>
+        <tr>
+          <th>コマンド</th>
+          <th>送信</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (var j = 0; j < devices[i].commands; i++) { %>
+          <tr>
+            <td><%= devices[i].commands[j].name %></td>
+            <td>
+              <form method="GET" action="/send">
+                <input type="hidden" name="code" value="<%= devices[i].controls[j].command %>" />
+                <button type="button" class="btn btn-primary"
+                        onclick="submit();">ピッ！</button>
+              </form>
+            </td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+<% } %>
+
+<% include footer %>

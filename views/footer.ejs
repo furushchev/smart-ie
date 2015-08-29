@@ -1,0 +1,10 @@
+</div>
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<% if (locals.JS_FILES) { %>
+  <% for (var i = 0; i < JS_FILES.length; i++) { %>
+    <script type="text/javascript" src="<%- JS_FILES[i] %>"></script>
+  <% } %>
+<% } %>
+  </body>
+</html>

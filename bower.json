@@ -1,0 +1,24 @@
+{
+  "name": "smart-ie",
+  "version": "0.0.0",
+  "authors": [
+    "Furushchev <furushchev@jsk.imi.i.u-tokyo.ac.jp>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1"
+  }
+}
